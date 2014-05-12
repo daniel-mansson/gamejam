@@ -71,10 +71,10 @@ public class Interface : MonoBehaviour {
         if (Application.loadedLevel == 0)
         {
             pos = Camera.main.WorldToScreenPoint(new Vector3(-4f, -4.2f, 0));
-            GUI.Label(new Rect(pos.x - size * 0.5f, pos.y - size * 0.5f, size, size), "Try to  make both\nsides equal!", labelStyle);
+            GUI.Label(new Rect(pos.x - size * 0.5f, pos.y - size * 0.5f, size, size), "Try to make both\nsides equal!", labelStyle);
 
             pos = Camera.main.WorldToScreenPoint(new Vector3(4f, 4.2f, 0));
-            GUI.Label(new Rect(pos.x - size * 0.5f, pos.y - size * 0.5f, size, size), "Changes one one side\nalso affects the other!", labelStyle);
+            GUI.Label(new Rect(pos.x - size * 0.5f, pos.y - size * 0.5f, size, size), "Changes to one side\nalso affects the other!", labelStyle);
 
             pos = Camera.main.WorldToScreenPoint(new Vector3(-4f, 4.2f, 0));
             GUI.Label(new Rect(pos.x - size * 0.5f, pos.y - size * 0.5f, size, size), "(Rotations does not count as moves)", levelStyle);
